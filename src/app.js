@@ -22,5 +22,6 @@ db.once("open", function(callback){
 var postControllers = require("./controllers/post")(app);
 var taskControllers = require("./controllers/tasks")(app);
 var bookControllers = require("./controllers/books")(app);
+var usersControllers = require("./controllers/users")(app);
 
 app.listen(process.env.PORT || 8081)
